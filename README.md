@@ -1,0 +1,1 @@
+# tugas1prognet_2205551120
