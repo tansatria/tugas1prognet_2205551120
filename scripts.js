@@ -1,5 +1,5 @@
 document.getElementById('bioForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevents the default form submission behavior
+    event.preventDefault();  // Prevent the default form submission behavior
 
     // Validate name
     const nameInput = document.getElementById('name');
