@@ -5,6 +5,10 @@ body {
     min-height: 100vh;
 }
 
+.element {
+    background-color: aquamarine;
+}
+
 .main-profile .card {
     min-height: 90vh;
 }
