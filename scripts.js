@@ -1,37 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-}
+document.getElementById('bioForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevents the default form submission behavior
 
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    // Validate name
+    const nameInput = document.getElementById('name');
+    if (nameInput.value.trim() === '') {
+        alert('Name cannot be empty');
+        nameInput.focus();
+        return;
+    }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+    // Validate email using a simple regex pattern
+    const emailInput = document.getElementById('email');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailInput.value)) {
+        alert('Invalid email address');
+        emailInput.focus();
+        return;
+    }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+    // If all validations pass, you can perform further actions like submitting the form
+    alert('Form submitted successfully!');
+});
