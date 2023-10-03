@@ -1,50 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #005B66;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
-.container {
-    max-width: 500px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.main-profile .card {
+    min-height: 90vh;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+.profile-desc .card {
+    min-height: 43.5vh;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea, form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #0056b3;
+.main-profile .card img {
+    border: 5px solid #383838;
 }
