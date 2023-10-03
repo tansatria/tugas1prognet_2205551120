@@ -4,45 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tugas JavaScript</title>
+    <title>My Personal Homepage</title>
 </head>
 <body>
     <div class="container">
-        <h1>Tugas JavaScript - Form Biodata</h1>
+        <h1>My Personal Homepage</h1>
 
-        <form id="bioForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+        <div class="biodata">
+            <h2>Biodata</h2>
+            <ul>
+                <li><strong>Name:</strong> Satria Andrew Tan</li>
+                <li><strong>NIM:</strong> 2205551120</li>
+                <li><strong>Mata Kuliah:</strong> Pemrograman Internet A</li>
+            </ul>
+        </div>
 
-            <label for="nim">NIM:</label>
-            <input type="text" id="nim" name="nim" required pattern="\d{10}"><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label><br>
-
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio" rows="4" cols="50" required></textarea><br>
-
-            <label for="course">Course:</label>
-            <select id="course" name="course" required>
-                <option value="" disabled selected>Select your course</option>
-                <option value="Computer Science">Computer Science</option>
-                <option value="Information Technology">Information Technology</option>
-                <option value="Software Engineering">Software Engineering</option>
-            </select><br>
-
-            <label for="agree">Agree to terms:</label>
-            <input type="checkbox" id="agree" name="agree" required>
-            <label for="agree">I agree to the terms and conditions</label><br>
-
-            <button type="submit">Submit</button>
-        </form>
+        <div class="menu">
+            <h2>Tugas Saya</h2>
+            <ul>
+                <li><a href="task1.html">Tugas 1</a></li>
+                <li><a href="task2.html">Tugas 2</a></li>
+                <!-- Add more task links as needed -->
+            </ul>
+        </div>
     </div>
 
     <script src="script.js"></script>
