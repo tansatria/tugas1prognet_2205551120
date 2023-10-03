@@ -9,15 +9,15 @@ document.getElementById('bioForm').addEventListener('submit', function(event) {
         return;
     }
 
-    // Validate email using a simple regex pattern
-    const emailInput = document.getElementById('email');
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(emailInput.value)) {
-        alert('Invalid email address');
-        emailInput.focus();
+    // Validate NIM (Assuming NIM is a 10-digit number)
+    const nimInput = document.getElementById('nim');
+    const nimPattern = /^\d{10}$/;
+    if (!nimPattern.test(nimInput.value)) {
+        alert('NIM should be a 10-digit number');
+        nimInput.focus();
         return;
     }
 
     // If all validations pass, you can perform further actions like submitting the form
-    alert('Form submitted successfully!');
+    alert('Form submitted successfully!\nName: ' + nameInput.value + '\nNIM: ' + nimInput.value);
 });
