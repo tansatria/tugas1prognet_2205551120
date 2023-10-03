@@ -3,35 +3,36 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-label {
-    display: block;
+.biodata, .menu {
+    margin-bottom: 20px;
+}
+
+.biodata h2, .menu h2 {
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
     margin-bottom: 5px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.menu li a {
+    text-decoration: none;
+    color: #007BFF;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.menu li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
