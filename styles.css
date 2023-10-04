@@ -5,10 +5,6 @@ body {
     min-height: 100vh;
 }
 
-.element {
-    background-color: #003940;
-}
-
 .main-profile .card {
     min-height: 90vh;
 }
@@ -19,4 +15,8 @@ body {
 
 .main-profile .card img {
     border: 5px solid #383838;
+}
+
+.element {
+    background-color: #66CCFF;
 }
