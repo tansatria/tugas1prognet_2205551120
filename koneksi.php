@@ -1,15 +1,9 @@
-<?php
+<?php 
 
-$db = 'db_2205551120';
-$server = 'prognet.localnet';
-$username = '2205551120';
-$password = '2205551120';
+//koneksi ke dataabse
+$conn = mysqli_connect("prognet.localnet", "2205551120", "2205551120", "db_2205551120");
 
-$conn = mysqli_connect($server, $username, $password, $db);
-if ($!conn) {
-    die('Koneksi gagal!' . mysqli_connect_error());
-}
-
+//function membaca data di databse
 function read($query) {
 
     global $conn; 
@@ -24,6 +18,7 @@ function read($query) {
     return $rows;
 }
 
+
 function update($update) {
     global $conn;
 
@@ -36,6 +31,7 @@ function update($update) {
     $fakultas = mysqli_real_escape_string($conn, $update["fakultas"]);
     $prodi = mysqli_real_escape_string($conn, $update["prodi"]);
     $nim = mysqli_real_escape_string($conn, $update["nim"]);
+
     $query = "UPDATE tb_datadiri SET
         nama_mhs = '$nama_mhs',
         tgl_lahir = '$tgl_lahir',
