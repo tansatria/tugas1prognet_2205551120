@@ -1,7 +1,14 @@
-<?php 
+<?php
 
-//koneksi ke dataabse
-$conn = mysqli_connect("prognet.localnet", "2205551120", "2205551120", "db_2205551120");
+$db = 'db_2205551120';
+$server = 'prognet.localnet';
+$username = '2205551120';
+$password = '2205551120';
+
+$conn = mysqli_connect($server, $username, $password, $db);
+if (!$conn) {
+    die('Koneksi gagal!' . mysqli_connect_error());
+}
 
 //function membaca data di databse
 function read($query) {
