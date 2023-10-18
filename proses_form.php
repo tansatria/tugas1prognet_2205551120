@@ -1,5 +1,5 @@
 <?php
-include 'config/koneksi.php';
+include 'koneksi.php';
 
 if (isset($_POST['input'])) {
     $nama = $_POST['nama'];
