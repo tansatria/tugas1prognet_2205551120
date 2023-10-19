@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 $db = 'db_2205551120';
 $server = 'prognet.localnet';
